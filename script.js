@@ -52,7 +52,7 @@ function showEmptyMessage() {
   message.innerHTML = `
     <img class="mx-auto w-24 mb-6" src="./image/jobs.png">
     <h2 class="text-2xl font-bold">No jobs Available</h2>
-    <p class="text-gray-500 mt-2">Check back soon for new job opportunities</p>
+    <p class="text-[#64748B] mt-2">Check back soon for new job opportunities</p>
   `;
 
   cardsSection.appendChild(message);
@@ -122,7 +122,7 @@ document.querySelectorAll(".card").forEach(card => {
     card.setAttribute("data-status", "interview");
 
     statusBtn.innerText = "INTERVIEW";
-    statusBtn.className = "bg-green-200 text-green-800 px-3 py-2 rounded-sm";
+    statusBtn.className = "text-green-700 border-2 border-green-700 bg-green-100 px-3 py-1 rounded-sm font-semibold";
 
     interviewCount++;
 
@@ -143,7 +143,7 @@ document.querySelectorAll(".card").forEach(card => {
     card.setAttribute("data-status", "rejected");
 
     statusBtn.innerText = "REJECTED";
-    statusBtn.className = "bg-red-200 text-red-800 px-3 py-2 rounded-sm";
+    statusBtn.className = "text-red-700 border-2 border-red-700 bg-red-100 px-3 py-1 rounded-sm font-semibold";
 
     rejectedCount++;
 
