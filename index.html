@@ -38,7 +38,7 @@
         <div><h2 class="text-3xl font-bold ">Available Jobs</h2></div>
         <div><span class="hidden md:block">8 jobs</span></div>
     </div>
-    <div class="flex md:flex-row gap-4 mt-5">
+    <div class="flex flex-col md:flex-row gap-4 mt-5">
         <button id="all-filter-btn" class="bg-[#3B82F6] text-white px-6 py-2 rounded cursor-pointer">All</button>
         <button id="interview-filter-btn" class=" bg-white px-6 py-2 rounded cursor-pointer">Interview</button>
         <button id="rejected-filter-btn" class="bg-white px-6 py-2 rounded cursor-pointer">Rejected</button>
@@ -46,14 +46,14 @@
     <!-- card section -->
     <section class="allCards my-5 space-y-8">
         <!-- card-1 -->
-        <div class="card flex justify-between p-8 bg-[#F1F2F4] rounded-xl shadow-2xl">
+        <div class="card flex flex-col-reverse md:justify-between md:flex-row p-8 bg-[#F1F2F4] rounded-xl shadow-2xl">
             <div class="space-y-6">
       <div>
         <h3 class="text-2xl font-semibold">Mobile First Corp</h3>
       <p class="text-[#64748B] text-xl">React Native Developer</p>
       </div>
-       <div class="flex gap-10 text-[#64748B]">
-        <p>Remote</p>
+       <div class="flex flex-col ml-5 md:flex-row md:gap-10 md:ml-0 text-[#64748B]">
+         <p>Remote</p>
         <li>Full-time</li>
         <li>$130,000 - $175,000</li>
        </div>
@@ -66,18 +66,18 @@
         <button class="text-red-700 border-2 border-red-700 bg-red-100 px-3 py-1 rounded-sm font-semibold cursor-pointer">REJECTED</button>
        </div>
         </div>
-        <div>
+        <div class="w-1/5 ml-auto md:w-auto md:ml-0">
             <img src="./image/dlt.png" alt="">
         </div>
         </div>
         <!--card-2  -->
-        <div class="card flex justify-between p-8 bg-[#F1F2F4] rounded-xl shadow-xl">
+        <div class="card flex flex-col-reverse md:justify-between md:flex-row p-8 bg-[#F1F2F4] rounded-xl shadow-xl">
             <div class="space-y-6">
       <div>
         <h3 class="text-2xl font-semibold">WebFlow Agency</h3>
       <p class="text-[#64748B] text-xl">Web Designer & Developer</p>
       </div>
-       <div class="flex gap-10 text-[#64748B]">
+       <div class="flex flex-col ml-5 md:flex-row md:gap-10 md:ml-0 text-[#64748B]">
         <p>Los Angeles, CA </p>
         <li>Part-time </li>
         <li>$80,000 - $120,000</li>
@@ -91,18 +91,18 @@
         <button class="text-red-700 border-2 border-red-700 bg-red-100 px-3 py-1 rounded-sm font-semibold cursor-pointer">REJECTED</button>
        </div>
         </div>
-        <div>
+        <div class="w-1/5 ml-auto md:w-auto md:ml-0">
             <img src="./image/dlt.png" alt="">
         </div>
         </div>
         <!-- card-3 -->
-        <div class="card flex justify-between p-8 bg-[#F1F2F4] rounded-xl shadow-xl">
+        <div class="card flex flex-col-reverse md:justify-between md:flex-row p-8 bg-[#F1F2F4] rounded-xl shadow-xl">
             <div class="space-y-6">
       <div>
         <h3 class="text-2xl font-semibold">DataViz Solutions</h3>
       <p class="text-[#64748B] text-xl">Data Visualization Specialist</p>
       </div>
-       <div class="flex gap-10 text-[#64748B]">
+       <div class="flex flex-col ml-5 md:flex-row md:gap-10 md:ml-0 text-[#64748B]">
         <p>Boston, MA </p>
         <li>Full-time</li>
         <li>$125,000 - $165,000</li>
@@ -117,18 +117,18 @@
         <button class="text-red-700 border-2 border-red-700 bg-red-100 px-3 py-1 rounded-sm font-semibold cursor-pointer">REJECTED</button>
        </div>
         </div>
-        <div>
+        <div class="w-1/5 ml-auto md:w-auto md:ml-0">
             <img src="./image/dlt.png" alt="">
         </div>
         </div>
         <!-- card-4 -->
-        <div class="card flex justify-between p-8 bg-[#F1F2F4] rounded-xl shadow-xl">
+        <div class="card flex flex-col-reverse md:justify-between md:flex-row p-8 bg-[#F1F2F4] rounded-xl shadow-xl">
             <div class="space-y-6">
       <div>
         <h3 class="text-2xl font-semibold">CloudFirst Inc</h3>
       <p class="text-[#64748B] text-xl">Backend Developer</p>
       </div>
-       <div class="flex gap-10 text-[#64748B]">
+       <div class="flex flex-col ml-5 md:flex-row md:gap-10 md:ml-0 text-[#64748B]">
         <p>Seattle, WA</p>
         <li>Full-time</li>
         <li>$140,000 - $190,000</li>
@@ -142,18 +142,18 @@
         <button class="text-red-700 border-2 border-red-700 bg-red-100 px-3 py-1 rounded-sm font-semibold cursor-pointer">REJECTED</button>
        </div>
         </div>
-        <div>
+        <div class="w-1/5 ml-auto md:w-auto md:ml-0">
             <img src="./image/dlt.png" alt="">
         </div>
         </div>
         <!-- card-5 -->
-        <div class="card flex justify-between p-8 bg-[#F1F2F4] rounded-xl shadow-xl">
+        <div class="card flex flex-col-reverse md:justify-between md:flex-row p-8 bg-[#F1F2F4] rounded-xl shadow-xl">
             <div class="space-y-6">
       <div>
         <h3 class="text-2xl font-semibold">Innovation Labs</h3>
       <p class="text-[#64748B] text-xl">UI/UX Engineer</p>
       </div>
-       <div class="flex gap-10 text-[#64748B]">
+       <div class="flex flex-col ml-5 md:flex-row md:gap-10 md:ml-0 text-[#64748B]">
         <p>New York, NY</p>
         <li>Full-time</li>
         <li>$130,000 - $170,000</li>
@@ -167,18 +167,18 @@
         <button class="text-red-700 border-2 border-red-700 bg-red-100 px-3 py-1 rounded-sm font-semibold cursor-pointer">REJECTED</button>
        </div>
         </div>
-        <div>
+        <div class="w-1/5 ml-auto md:w-auto md:ml-0">
             <img src="./image/dlt.png" alt="">
         </div>
         </div>
         <!-- card-6 -->
-        <div class="card flex justify-between p-8 bg-[#F1F2F4] rounded-xl shadow-xl">
+        <div class="card flex flex-col-reverse md:justify-between md:flex-row p-8 bg-[#F1F2F4] rounded-xl shadow-xl">
             <div class="space-y-6">
       <div>
         <h3 class="text-2xl font-semibold">MegaCorp Solutions</h3>
       <p class="text-[#64748B] text-xl">JavaScript Developer</p>
       </div>
-       <div class="flex gap-10 text-[#64748B]">
+       <div class="flex flex-col ml-5 md:flex-row md:gap-10 md:ml-0 text-[#64748B]">
         <p>New York, NY</p>
         <li>Full-time</li>
         <li>$130,000 - $170,00</li>
@@ -192,18 +192,18 @@
         <button class="text-red-700 border-2 border-red-700 bg-red-100 px-3 py-1 rounded-sm font-semibold cursor-pointer">REJECTED</button>
        </div>
         </div>
-        <div>
+       <div class="w-1/5 ml-auto md:w-auto md:ml-0">
             <img src="./image/dlt.png" alt="">
         </div>
         </div>
         <!-- card-7 -->
-        <div class="card flex justify-between p-8 bg-[#F1F2F4] rounded-xl shadow-xl">
+        <div class="card flex flex-col-reverse md:justify-between md:flex-row p-8 bg-[#F1F2F4] rounded-xl shadow-xl">
             <div class="space-y-6">
       <div>
         <h3 class="text-2xl font-semibold">StartupXYZ</h3>
       <p class="text-[#64748B] text-xl">Full Stack Engineer</p>
       </div>
-       <div class="flex gap-10 text-[#64748B]">
+       <div class="flex flex-col ml-5 md:flex-row md:gap-10 md:ml-0 text-[#64748B]">
         <p>Remote</p>
         <li>Full-time</li>
         <li>$120,000 - $160,000</li>
@@ -217,18 +217,18 @@
         <button class="text-red-700 border-2 border-red-700 bg-red-100 px-3 py-1 rounded-sm font-semibold cursor-pointer">REJECTED</button>
        </div>
         </div>
-        <div>
+        <div class="w-1/5 ml-auto md:w-auto md:ml-0">
             <img src="./image/dlt.png" alt="">
         </div>
         </div>
         <!-- card-8 -->
-         <div class="card flex justify-between p-8 bg-[#F1F2F4] rounded-xl shadow-xl">
+         <div class="card flex flex-col-reverse md:justify-between md:flex-row  p-8 bg-[#F1F2F4] rounded-xl shadow-xl">
             <div class="space-y-6">
       <div>
         <h3 class="text-2xl font-semibold">TechCorp Industries</h3>
       <p class="text-[#64748B] text-xl">Senior Frontend Developer</p>
       </div>
-       <div class="flex gap-10 text-[#64748B]">
+       <div class="flex flex-col ml-5 md:flex-row md:gap-10 md:ml-0 text-[#64748B]">
         <p>San Francisco, CA</p>
         <li>Full-time</li>
         <li>$130,000 - $175,000</li>
@@ -242,7 +242,7 @@
         <button class="text-red-700 border-2 border-red-700 bg-red-100 px-3 py-1 rounded-sm font-semibold cursor-pointer">REJECTED</button>
        </div>
         </div>
-        <div>
+        <div class="w-1/5 ml-auto md:w-auto md:ml-0">
             <img src="./image/dlt.png" alt="">
         </div>
         </div>
