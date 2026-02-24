@@ -17,7 +17,6 @@ let interviewCount = 0;
 let rejectedCount = 0;
 let currentTab = "all";
 
-// initial setupp
 totalCountEl.innerText = cards.length;
 jobCountText.innerText = cards.length + " jobs";
 
@@ -50,7 +49,7 @@ function showEmptyMessage() {
   message.className = "text-center py-20 w-full";
 
   message.innerHTML = `
-    <img class="mx-auto w-24 mb-6" src="./image/jobs.png">
+    <img class="mx-auto bg-transparent w-24 mb-6" src="./image/jobs.png">
     <h2 class="text-2xl font-bold">No jobs Available</h2>
     <p class="text-[#64748B] mt-2">Check back soon for new job opportunities</p>
   `;
@@ -122,7 +121,8 @@ document.querySelectorAll(".card").forEach(card => {
     card.setAttribute("data-status", "interview");
 
     statusBtn.innerText = "INTERVIEW";
-    statusBtn.className = "text-green-700 border-2 border-green-700 bg-green-100 px-3 py-1 rounded-sm font-semibold";
+
+    statusBtn.className = "text-green-700 border-2 border-green-700 bg-green-300 px-3 py-1 rounded-sm font-semibold";
 
     interviewCount++;
 
@@ -143,7 +143,7 @@ document.querySelectorAll(".card").forEach(card => {
     card.setAttribute("data-status", "rejected");
 
     statusBtn.innerText = "REJECTED";
-    statusBtn.className = "text-red-700 border-2 border-red-700 bg-red-100 px-3 py-1 rounded-sm font-semibold";
+    statusBtn.className = "text-red-700 border-2 border-red-700 bg-red-300 px-3 py-1 rounded-sm font-semibold";
 
     rejectedCount++;
 
